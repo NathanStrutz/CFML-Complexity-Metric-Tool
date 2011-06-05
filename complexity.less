@@ -1,0 +1,118 @@
+@PageBG: #333;
+@ContentBG:  #F0F0F0;
+@ContentText: #5A5A5A;
+@HighlightColor: #0FBEC1;
+@HighlightColorBlock: #0FBEC1 - 25%; // has to be darker because of eye tricks between big blocks vs small lines
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+	font-size:.99em;
+    margin: 0;
+    background: @PageBG;
+	color: @ContentText;
+}
+
+header {
+    text-align: center;
+	h1 {
+	    color: #FFF;
+	}
+	h4 {
+		font-size: 0.5em;
+		letter-spacing: 0.3em;
+		color:#CCC;
+	}
+	margin:0 0 1em 0;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+	padding:0;
+}
+
+nav, section {
+	margin: 0 auto;
+	width: 80%;
+	padding: 2em;
+	background: @ContentBG;
+}
+
+nav {
+	padding:0 2em;
+	a, span {
+		background:#FFF;
+		padding:1em;
+		&:hover, &:active {
+			background: @HighlightColorBlock;
+			color:#FFF;
+		}
+	}
+	span {
+		cursor:default;
+	}
+}
+
+
+fieldset {
+    border: 0.9em solid #FFF;
+}
+
+legend {
+    color: #FFF;
+    font-weight: bold;
+    padding: 0 0.4em;
+}
+
+a {
+	color:@HighlightColor;
+}
+
+.highlight {
+	font-weight:lighter;
+	color:@HighlightColor;
+}
+.highlightDim {
+	color:#008688;
+}
+
+
+
+.mono, pre {
+	font-family:Consolas,monospace;
+	font-size:.8em;
+	margin:0;
+	padding:0;
+}
+thead td, thead th {
+	font-weight:bold;
+	border-bottom:1px solid black;
+}
+.b {
+	font-weight:bold;
+}
+
+table.dirReport a {
+	color:#000;
+}
+
+table.detailedComplexity td.lineCode {
+}
+td.lineNo {
+	background:#E6D4A7;
+	color:#825534;
+	border:1px solid #825534;
+	text-align:center;
+}
+td.lineCode {
+	background-color:#F8F6C9;
+	color:#000;
+}
+tr.line, pre {
+	font-family:Consolas,monospace;
+	font-size:.9em;
+	margin:0;padding:0;
+}
