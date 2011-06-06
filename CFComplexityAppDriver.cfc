@@ -70,6 +70,7 @@
 					type = 'Dir'
 					and lower(name) != 'CVS'
 					and lower(name) != '.svn'
+					and lower(directory) not like '%.svn%'
 				)
 		</cfquery>
 
