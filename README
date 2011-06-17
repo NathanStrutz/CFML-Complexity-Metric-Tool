@@ -1,0 +1,13 @@
+CFML Complexity Metric Tool 
+===========================
+Short story
+-----------
+I wanted a tool that could give me a McCabe index on my CFML (ColdFusion Markup Language) code. I have ColdFusion, I want to analyze ColdFusion, I put a tool together to do it and visually show me the cyclomatic complexity for each file.
+
+Use:
+----
+Download it. Run it. It will ask for a path (defaulting to what it thinks is your web root). Edit the path or let it run on the default - be careful, it may take a couple minutes if you have a lot of files. You should see a relative heatmap of your files, with the most complex code showing up in red, and the least complex in blue. Drill down to a file. If you pick a CFC (ColdFusion Component), you will get a list of each function, same heatmap rules apply. Drill down further to see your code, line-by-line, in an exaggerated cyclomatic complexity heatmap of your CFML. Cool!
+
+Requirements:
+-------------
+ColdFusion 8
