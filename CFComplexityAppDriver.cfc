@@ -68,14 +68,13 @@
 				or lower(name) like '%.js'
 				or (
 					type = 'Dir'
-					and lower(name) != 'CVS'
-					and lower(name) != '.svn'
-					and lower(name) != '.hg'
-					and lower(name) != '.git'
+					and lower(name) != 'cvs'
+					and lower(name) not like '.%'
 					and lower(directory) not like '%.hg%'
 					and lower(directory) not like '%.git%'
 					and lower(directory) not like '%.svn%'
 				)
+				and size > 5
 		</cfquery>
 
 
