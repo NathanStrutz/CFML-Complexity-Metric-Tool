@@ -1,4 +1,5 @@
 <cfparam name="url.directory" default="#expandPath('/')#" />
+<cfsetting requesttimeout="900" />
 
 <cf_layout title="Directory Listing" directory="#url.directory#">
 
